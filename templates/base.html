@@ -15,7 +15,7 @@
 
     <header>
         
-    <nav class="nav-extended text-shadow cyan">
+    <nav class="nav-extended text-shadow light-green darken-2">
         <div class="nav-wrapper">
         <a href="#!" class="brand-logo">Daily Planner</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
@@ -24,7 +24,7 @@
             {% if session.user %}
 			    <li><a href="{{ url_for(
                     'profile', username=session['user']) }}">Profile</a></li>
-			    <li><a href="#">New Plan</a></li>
+			    <li><a href="{{ url_for('add_plan') }}">Add Plan</a></li>
 			    <li><a href="#">Manage Plan</a></li>
                 <li><a href="{{ url_for('logout') }}">Log Out</a></li>
             {% else %}
@@ -36,11 +36,11 @@
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-        <li><h4 class="center-align cyan-text lighten-2">Daily Planner</h4></li>
+        <li><h4 class="center-align light-green-text darken-2">Daily Planner</h4></li>
 		<li><a href="{{ url_for('get_tasks') }}">Home</a></li>
             {% if session.user %}
                 <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                <li><a href="#">Add Plan</a></li>
+                <li><a href="{{ url_for('add_plan') }}">Add Plan</a></li>
                 <li><a href="#">Manage Plan</a></li>
                 <li><a href="{{ url_for('logout') }}">Log Out</a></li>
             {% else %}
@@ -95,7 +95,7 @@
             </div>
         </div>
 
-        <div class="footer-copyright white-text text-shadow cyan">
+        <div class="footer-copyright white-text text-shadow light-green darken-2">
             <div class="container">
                 © 2021 Maridel Arcagua
             </div>

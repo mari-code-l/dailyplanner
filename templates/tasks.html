@@ -4,7 +4,7 @@
     <ul class="collapsible">
         {% for task in tasks %}
         <li>
-            <div class="collapsible-header white-text cyan text-shadow">
+            <div class="collapsible-header black-text grey lighten-2 ">
                 <i class="fas fa-caret-down"></i>
                 <strong>{{ task.task_name }}</strong> : {{ task.due_date }}
                 {% if task.is_urgent == "on" %}
