@@ -5,3 +5,27 @@
 .brand-logo {
     margin-left: 10px;
 }
+
+.social{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+.social-links:hover{
+     transform: translate(-0%, -5%);
+     transition: 0.5s;
+}  
+
+li.social-links a{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background-color: grey;
+    text-align: center;
+    display: block;
+    opacity: 0.8;
+    margin: 0 15px;
+    list-style: none;
+    line-height: 38px;
+    font-size: 25px;
+}
