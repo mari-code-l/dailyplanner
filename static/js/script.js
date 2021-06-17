@@ -8,9 +8,11 @@ $(document).ready(function () {
     $(".datepicker").datepicker({
         format: "dd mmmm, yyyy",
         yearRange: 3,
+        minDate: new Date(),
         showClearBtn: true,
         i18n: {
             done: "Select"
         }
     });
 });
+
