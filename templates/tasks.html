@@ -8,8 +8,8 @@
                 <i class="fas fa-caret-down"></i>
                 <strong>{{ task.task_name }}</strong> : {{ task.due_date }}
                 {% if task.is_urgent == "on" %}
-                    <i class="fas fa-exclamation-circle light-green-text lighten-4 tooltipped"
-                        data-position="right" data-tooltip="URGENT!"></i>
+                    <i class="fas fa-exclamation-circle red-text lighten-4 tooltipped"
+                        data-position="right" data-tooltip="ASAP!"></i>
                 {% endif %}
             </div>
             <div class="collapsible-body">

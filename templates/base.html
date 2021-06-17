@@ -15,7 +15,7 @@
 
     <header>
         
-    <nav class="nav-extended text-shadow light-green darken-2">
+    <nav class="nav-extended text-shadow grey darken-2">
         <div class="nav-wrapper">
         <a href="#!" class="brand-logo">Daily Planner</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
@@ -36,7 +36,7 @@
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-        <li><h4 class="center-align light-green-text darken-2">Daily Planner</h4></li>
+        <li><h4 class="center-align cyan-text darken-2">Daily Planner</h4></li>
 		<li><a href="{{ url_for('get_tasks') }}">Home</a></li>
             {% if session.user %}
                 <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
@@ -92,7 +92,7 @@
 
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
 
-        <div class="footer-copyright white-text text-shadow light-green darken-2">
+        <div class="footer-copyright white-text text-shadow cyan darken-1">
             <div class="container">
                 © 2021 Maridel Arcagua
             </div>
