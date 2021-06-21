@@ -17,13 +17,12 @@
         
     <nav class="nav-extended text-shadow grey darken-2">
         <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Daily Planner</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+        <a href="{{ url_for('get_landing') }}" class="brand-logo">Daily Planner</a>
+        <a href="{{ url_for('get_landing') }}" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
         <ul class="right hide-on-med-and-down">
+            <li><a href="{{ url_for('get_landing') }}">Home</a></li>
             {% if session.user %}
-                <li><a href="{{ url_for('get_tasks') }}">Home</a></li>
-			    <li><a href="{{ url_for(
-                    'profile', username=session['user']) }}">Profile</a></li>
+                <li><a href="{{ url_for('get_tasks') }}">My Plan</a></li>
 			    <li><a href="{{ url_for('add_plan') }}">Add Plan</a></li>
 			    <li><a href="#">Manage Plan</a></li>
                 <li><a href="{{ url_for('logout') }}">Log Out</a></li>
@@ -37,9 +36,9 @@
 
     <ul class="sidenav" id="mobile-demo">
         <li><h4 class="center-align cyan-text darken-2">Daily Planner</h4></li>
+            <li><a href="{{ url_for('get_landing') }}">Home</a></li>
             {% if session.user %}
-                <li><a href="{{ url_for('get_tasks') }}">Home</a></li>
-                <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
+                <li><a href="{{ url_for('get_tasks') }}">My Plan</a></li>
                 <li><a href="{{ url_for('add_plan') }}">Add Plan</a></li>
                 <li><a href="#">Manage Plan</a></li>
                 <li><a href="{{ url_for('logout') }}">Log Out</a></li>
