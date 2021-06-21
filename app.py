@@ -23,6 +23,7 @@ mongo = PyMongo(app)
 def get_landing():
     return render_template("landing.html")
 
+
 @app.route("/get_tasks")
 def get_tasks():
     tasks = mongo.db.tasks.find()
