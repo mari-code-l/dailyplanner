@@ -71,14 +71,13 @@ h3.center-align.grey-text.text-darken-3{
 .btn-small.green.accent-4{
     width: 60px;
     height: 30px;
-    opacity: 0.7;
 }
 
 .collapsible-header.black-text.grey.lighten-2 {
     line-height: 42px;
 }
 
-.btn-small.light-blue.lighten-1{
+.btn-small.grey.darken-2{
     width: 60px;
     height: 30px;
     opacity: 0.7;
@@ -91,4 +90,9 @@ body {
 }
 main {
     flex: 1 0 auto;
+}
+
+span.landing{
+    background-color: rgba(0, 0, 0, 0.925);
+    padding-bottom: 5px;
 }
