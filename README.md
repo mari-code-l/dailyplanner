@@ -1,5 +1,5 @@
 <h1 align="center">
-     <a href="https://daily-planner101.herokuapp.com/get_landing" target="_blank"><img src="https://res.cloudinary.com/food-channel/image/upload/c_fill,g_auto,h_250,w_970/b_rgb:000000,e_gradient_fade,y_-0.5/c_scale,co_rgb:ffffff,fl_relative,l_text:montserrat_25_style_light_align_center:Either you run the day or the day runs you.,w_0.5,y_0.18/v1624626964/amy-humphries-2M_sDJ_agvs-unsplash_vyjljj.jpg" alt="Daily Planner"></a>
+     <a href="https://daily-planner101.herokuapp.com" target="_blank"><img src="https://res.cloudinary.com/food-channel/image/upload/c_fill,g_auto,h_250,w_970/b_rgb:000000,e_gradient_fade,y_-0.5/c_scale,co_rgb:ffffff,fl_relative,l_text:montserrat_25_style_light_align_center:Either you run the day or the day runs you.,w_0.5,y_0.18/v1624626964/amy-humphries-2M_sDJ_agvs-unsplash_vyjljj.jpg" alt="Daily Planner"></a>
 Daily Planner 101</h1>
 
 <div align="center">
@@ -9,7 +9,7 @@ where users can register, log-in, create, read, update, delete and search their 
 <p>Inspired by my boyfriend who's very old school and still write down his plan with the use of paper and pen. I find it difficult for me to 
 see him still using the old fashioned way so I have decided to create an app with a simple, clean and user friendly design </p>
 
-[View the live project here](https://daily-planner101.herokuapp.com/get_landing)
+[View the live project here](https://daily-planner101.herokuapp.com)
 <hr>
 </div>
 
