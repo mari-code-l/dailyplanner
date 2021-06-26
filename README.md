@@ -1,7 +1,6 @@
-
-<div><a href="https://daily-planner101.herokuapp.com" target="_blank"><img src="https://res.cloudinary.com/food-channel/image/upload/c_fill,g_auto,h_250,w_970/b_rgb:000000,e_gradient_fade,y_-0.5/c_scale,co_rgb:ffffff,fl_relative,l_text:montserrat_25_style_light_align_center:Either you run the day or the day runs you.,w_0.5,y_0.18/v1624626964/amy-humphries-2M_sDJ_agvs-unsplash_vyjljj.jpg" alt="Daily Planner"></a>
-<h1 align="center">Daily Planner 101</h1>
-<div>
+<h1 align="center">
+    <a href="https://daily-planner101.herokuapp.com" target="_blank"><img src="https://res.cloudinary.com/food-channel/image/upload/c_fill,g_auto,h_250,w_970/b_rgb:000000,e_gradient_fade,y_-0.5/c_scale,co_rgb:ffffff,fl_relative,l_text:montserrat_25_style_light_align_center:Either you run the day or the day runs you.,w_0.5,y_0.18/v1624626964/amy-humphries-2M_sDJ_agvs-unsplash_vyjljj.jpg" alt="Daily Planner"></a>
+Daily Planner 101</h1>
 
 <div align="center">
 <p><strong>Daily Planner 101</strong> is a personal web application for those who loves to organize their daily plan, 
@@ -43,7 +42,7 @@ see him still using the old fashioned way so I have decided to create an app wit
 10. [Technical Support](#Technical-Support)
 ***
 
-![Daily Planner 101](image/responsive-img.png)
+![Daily Planner 101](static/images/readme-files/responsive.png)
 
 ***
 ## UX 
