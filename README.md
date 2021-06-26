@@ -42,6 +42,9 @@ see him still using the old fashioned way so I have decided to create an app wit
 10. [Technical Support](#Technical-Support)
 ***
 
+![Daily Planner 101](image/responsive-img.png)
+
+***
 ## UX 
 ### Project Goals
 The primary goal of **Daily Planner 101** is to provide a web-based application, that is simplistic and user friendly design, 
