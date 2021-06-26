@@ -15,7 +15,7 @@
     <header> 
     <nav class="nav-extended text-shadow grey darken-2">
         <div class="nav-wrapper">
-        <a href="{{ url_for('get_landing') }}" class="brand-logo">Daily Planner</a>
+        <a href="{{ url_for('get_landing') }}" class="brand-logo">Daily Planner 101</a>
         <a href="{{ url_for('get_landing') }}" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
         <ul class="right hide-on-med-and-down">
             <li><a href="{{ url_for('get_landing') }}">Home</a></li>
@@ -35,7 +35,7 @@
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-        <li><h4 class="center-align cyan-text darken-2">Daily Planner</h4></li>
+        <li><h4 class="center-align cyan-text darken-2">Daily Planner 101</h4></li>
             <li><a href="{{ url_for('get_landing') }}">Home</a></li>
             {% if session.user %}
                 <li><a href="{{ url_for('get_tasks', username=session['user']) }}">My Plan</a></li>
