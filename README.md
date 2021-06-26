@@ -1,17 +1,15 @@
-<h1 align="center">
-     <a href="https://daily-planner101.herokuapp.com" target="_blank"><img src="https://res.cloudinary.com/food-channel/image/upload/c_fill,g_auto,h_250,w_970/b_rgb:000000,e_gradient_fade,y_-0.5/c_scale,co_rgb:ffffff,fl_relative,l_text:montserrat_25_style_light_align_center:Either you run the day or the day runs you.,w_0.5,y_0.18/v1624626964/amy-humphries-2M_sDJ_agvs-unsplash_vyjljj.jpg" alt="Daily Planner"></a>
-Daily Planner</h1>
+<a href="https://daily-planner101.herokuapp.com" target="_blank"><img src="https://res.cloudinary.com/food-channel/image/upload/c_fill,g_auto,h_250,w_970/b_rgb:000000,e_gradient_fade,y_-0.5/c_scale,co_rgb:ffffff,fl_relative,l_text:montserrat_25_style_light_align_center:Either you run the day or the day runs you.,w_0.5,y_0.18/v1624626964/amy-humphries-2M_sDJ_agvs-unsplash_vyjljj.jpg" alt="Daily Planner"></a>
+# Daily Planner
+### Third Milestone Project 
 
-<div align="center">
-<p><strong>Daily Planner 101</strong> is a personal web application for those who loves to organize their daily plan, 
+<p><strong>Daily Planner </strong> is a personal web application for those who loves to organize their daily plan, 
 where users can register, log-in, create, read, update, delete and search their plan</p>
 
-<p>Inspired by my boyfriend who's very old school and still write down his plan with the use of paper and pen. I find it difficult for me to 
+<p>Inspired by my boyfriend who's very old school and who still write down his plan with the use of paper and pen. I find it difficult for me to 
 see him still using the old fashioned way so I have decided to create an app with a simple, clean and user friendly design </p>
 
 [View the live project here](https://daily-planner101.herokuapp.com)
 <hr>
-</div>
 
 ### Table of contents
 1. [UX](#UX)
@@ -42,7 +40,7 @@ see him still using the old fashioned way so I have decided to create an app wit
 10. [Technical Support](#Technical-Support)
 ***
 
-![Daily Planner](static/images/readme-files/responsive.png)
+![Daily Planner](image/responsive-img.png)
 
 ***
 ## UX 
