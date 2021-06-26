@@ -26,7 +26,7 @@ def get_landing():
 
 @app.route("/get_tasks")
 def get_tasks():
-    tasks = mongo.db.tasks.find()
+    tasks = mongo.db.tasks.find({"created_by": session["user"]})
     return render_template("tasks.html", tasks=tasks)
 
 
@@ -102,7 +102,8 @@ def add_plan():
             "task_description": request.form.get("task_description"),
             "is_urgent": is_urgent,
             "due_date": request.form.get("due_date"),
-            "time_picker": request.form.get("time_picker")
+            "time_picker": request.form.get("time_picker"),
+            "created_by": session["user"]
         }
         mongo.db.tasks.insert_one(task)
         flash("Successfully Added")
@@ -122,7 +123,8 @@ def edit_task(task_id):
             "task_description": request.form.get("task_description"),
             "is_urgent": is_urgent,
             "due_date": request.form.get("due_date"),
-            "time_picker": request.form.get("time_picker")
+            "time_picker": request.form.get("time_picker"),
+            "created_by": session["user"]
         }
         mongo.db.tasks.update({"_id": ObjectId(task_id)}, submit)
         flash("Plan Updated")
