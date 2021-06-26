@@ -95,7 +95,6 @@ main {
 
 .container.testi {
   border: none;
-  background-color: none;
   border-radius: 5px;
   padding: 16px;
   margin: 16px 0
@@ -121,5 +120,4 @@ main {
 .container.testi1{
     flex-direction: row;
     display: flex;
-    align-content: center;
 }
