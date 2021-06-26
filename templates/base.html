@@ -23,8 +23,10 @@
             <li><a href="{{ url_for('get_landing') }}">Home</a></li>
             {% if session.user %}
                 <li><a href="{{ url_for('get_tasks', username=session['user']) }}">My Plan</a></li>
-			    <li><a href="{{ url_for('add_plan') }}">Add Plan</a></li>
-			    <li><a href="#">Manage Plan</a></li>
+                <li><a href="{{ url_for('add_plan') }}">Add Plan</a></li>
+                {% if session.user|lower == "admin"|lower %}
+                    <li><a href="{{ url_for('get_categories') }}">Manage Plan</a></li>
+                {% endif %}
                 <li><a href="{{ url_for('logout') }}">Log Out</a></li>
             {% else %}
 			    <li><a href="{{ url_for('login') }}">Log In</a></li>
@@ -40,7 +42,9 @@
             {% if session.user %}
                 <li><a href="{{ url_for('get_tasks', username=session['user']) }}">My Plan</a></li>
                 <li><a href="{{ url_for('add_plan') }}">Add Plan</a></li>
-                <li><a href="#">Manage Plan</a></li>
+                {% if session.user|lower == "admin"|lower %}
+                    <li><a href="{{ url_for('get_categories') }}">Manage Plan</a></li>
+                {% endif %}
                 <li><a href="{{ url_for('logout') }}">Log Out</a></li>
             {% else %}
                 <li><a href="{{ url_for('login') }}">Log In</a></li>

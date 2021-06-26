@@ -25,7 +25,7 @@
             <div class="collapsible-header black-text grey lighten-2 ">
                 <i class="fas fa-caret-down"></i>
                 <div class="col s3">
-                    <a href="{{ url_for('delete_task', task_id=task._id) }}" class="btn-small green accent-4"><i class="far fa-check-circle"></i></a>
+                    <a href="{{ url_for('delete_task', task_id=task._id) }}" class="btn-small white"><i class="far fa-check-circle"></i></a>
                     <a href="{{ url_for('edit_task', task_id=task._id) }}" class="btn-small grey darken-2"><i class="fas fa-pencil-alt"></i></a>
                 </div>
                 <strong>{{ task.task_name }}</strong> : {{ task.due_date }} {{ task.time_picker }}
