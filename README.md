@@ -43,8 +43,8 @@ see him still using the old fashioned way so I have decided to create an app wit
 ![Daily Planner](image/responsive-img.png)
 
 ***
-## UX 
-### Project Goals
+# UX 
+## Project Goals
 The primary goal of **Daily Planner 101** is to provide a web-based application, that is simplistic and user friendly design, 
 that allows users to **create**, **read**, **update**, **delete**, and **search** their plan in one app.
 
@@ -72,7 +72,7 @@ The Developer is looking to:
 - Deploy a project they are proud of, and excited to have, on their portfolio.
 
 
-### User Stories
+## User Stories
 **As a General User, I want to:**
 
 1. Create, Read, Update, Delete daily plan and find them on the database. 
@@ -90,3 +90,22 @@ The Developer is looking to:
 3. Creat a task .
 4. View my plans to edit task as needed.
 5. View my plans to delete task.
+
+
+**As an Admin, I want to:**
+
+1. View Manage Plan button and should be to visible to admin.
+2. Add categories, Edit and Delete them.
+
+
+## Development Planes
+
+***1. Strategy Plane*** 
+
+***2. Scope Plane*** 
+
+***3. Structure Plane*** 
+
+***4. Skeleton Plane*** 
+
+***5. Surface Plane*** 
