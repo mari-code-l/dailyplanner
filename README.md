@@ -102,7 +102,66 @@ The Developer is looking to:
 
 ***1. Strategy Plane*** 
 
+The web app is being developed to be used as daily basis specially for organized. 
+It is suitable for all gender and for all ages. It broken into three categories which focused on the following target audiences:
+- **Roles:**
+     - New Users (Non-Registered)
+     - Returning Users (Registered)
+     - Admin (Site Management)
+
+The website needs to enable the user to:
+- Register/Login to an account
+- Create plan
+- Search Plan created in the database 
+- View created Plan with the following information:
+    - Plan Category
+    - Plan 
+    - Plan Description
+    - Plan Date
+    - Time
+    - Created by:
+
+- Save and access their created plan
+- Stay connected with the app through social links
+- Button to go back to top
+- Testimonials for user feedback
+
+
 ***2. Scope Plane*** 
+
+A scope was defined to identify what needed to be done in order to align features with the strategy previously defined. This was broken into two categories:
+- **Content Requirements**
+     - The user will be looking for:
+        - Creating an account:
+            - Custom Username/Password
+            - Create their own Plan
+            - Manage their own Plan
+        - Easy Navigation
+        - Aesthetic and identifiable theme
+        - My Plan dashboard
+        - Searchable database system
+        - Site Social links
+
+- **Functionality Requirements**
+     - The user will be able to:
+        - Register/Login to account
+        - Create their profile:
+            - Customise Username/Password
+            - Edit and Delete their account
+            - Create their own Plan
+            - Edit and delete their Plan
+            - Save Plan
+        - Navigate to their plan:
+            - Search engine
+            - My Plan Page
+        - Create their plan, providing:
+            - Plan Category
+            - Plan 
+            - Plan Description
+            - Plan Date
+            - Time
+            - Created by:
+        - Stay connected with site
 
 ***3. Structure Plane*** 
 
