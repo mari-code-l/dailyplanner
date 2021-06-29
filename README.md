@@ -3,10 +3,10 @@
 ### Third Milestone Project 
 
 <p><strong>Daily Planner </strong> is a personal web application for those who loves to organize their daily plan, 
-where users can register, log-in, create, read, update, delete and search their plan</p>
+where users can register, log-in, create, read, update, delete and search created their plan</p>
 
 <p>Inspired by my boyfriend who's very old school and who still write down his plan with the use of paper and pen. I find it difficult for me to 
-see him still using the old fashioned way so I have decided to create an app with a simple, clean and user friendly design </p>
+see him still using the old fashioned way so I have decided to create an app with a simple, clean and user friendly design.</p>
 
 [View the live project here](https://daily-planner101.herokuapp.com)
 <hr>
@@ -162,9 +162,56 @@ A scope was defined to identify what needed to be done in order to align feature
             - Time
             - Created by:
         - Stay connected with site
+            - Social links
 
 ***3. Structure Plane*** 
 
+The information architecture was organized in order to ensure that users could navigate through the site with ease and efficiency, 
+with the following results: 
+
+
+
+**Information Architecture for User Management:**
+
 ***4. Skeleton Plane*** 
 
+Wireframe mockups were created in a [Balsamiq Cloud](https://balsamiq.cloud/sw8ybdy/pnztp2i/r2278) with providing a positive user experience in mind:
+
+![Wireframes](image/wireframe.png)
+
 ***5. Surface Plane*** 
+
+- <strong>Colour Scheme</strong>
+
+     - The chosen colour scheme was specifically selected in order to define the tone of the application.
+
+     - A colour palette was developed to create an ambient and familiar environment throughout the site.
+
+     - "COLOORS" is being used for [Color Generator](https://coolors.co/).
+
+     - The selected colours are:
+
+          ![Colour Palette](image/colorscheme.png)
+
+     - Additional colors are simply green and red for the highlight buttons like "Done and Urgent buttons". 
+
+
+- <strong>Typography</strong>
+
+     - The primary font chosen is [Roboto](https://fonts.google.com/specimen/Roboto#standard-styles). Roboto has a dual nature. 
+     It has a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. 
+     While some grotesks distort their letterforms to force a rigid rhythm, Roboto doesn’t compromise, allowing letters to be settled 
+     into their natural width. This makes for a more natural reading rhythm more commonly found in humanist and serif types. 
+     This is the stardard font type of "Materialize". I also made sure that it wont complicate throughout application.
+
+- <strong>Imagery</strong>
+
+     - The imagery chosen are from [Unsplash](https://unsplash.com/) in order to create a consistency of the app while maintaining the 
+     look and feel of the application. 
+     - I have used [Cloudinary](https://cloudinary.com/) and apply it to connect with the images used. I have input text as well on the 
+     banner image in which the app would love to emphasize and the purpose of it is to motivate the user as well.
+        - ![Banner Image](image/template_primary.jpeg) by Amy Humphries
+        - ![Landing Image](image/cathryn-lavery-fMD_Cru6OTk-unsplash.jpg) by Cathryn Lavery
+
+
+[Back to top ⇧](#table-of-contents)
