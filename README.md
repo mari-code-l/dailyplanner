@@ -6,7 +6,8 @@
 where users can register, log-in, create, read, update, delete and search created their plan</p>
 
 <p>Inspired by my boyfriend who's very old school and who still write down his plan with the use of paper and pen. I find it difficult for me to 
-see him still using the old fashioned way so I have decided to create an app with a simple, clean and user friendly design.</p>
+see him still using the old fashioned way so I have decided to create an app with a simple, clean and user friendly design. 
+For his love of the ocean, coffee, and croissant, I have used the said images to brighten up his day and every user and I guess everybody loves them too.</p>
 
 [View the live project here](https://daily-planner101.herokuapp.com)
 <hr>
@@ -170,8 +171,9 @@ The information architecture was organized in order to ensure that users could n
 with the following results: 
 
 
-
 **Information Architecture for User Management:**
+
+
 
 ***4. Skeleton Plane*** 
 
@@ -213,5 +215,165 @@ Wireframe mockups were created in a [Balsamiq Cloud](https://balsamiq.cloud/sw8y
         - ![Banner Image](image/template_primary.jpeg) by Amy Humphries
         - ![Landing Image](image/cathryn-lavery-fMD_Cru6OTk-unsplash.jpg) by Cathryn Lavery
 
+[Back to top ⇧]()
+
+## Data Schema
+
+For this project, the NoSQL database [MongoDB](https://www.mongodb.com/) was used to store the dataset. 
+Within the created database, three collections were created, as illustrated below:
+
+![Data Schema](image/datascheme.png)
+
+### Categories Collection
+
+- There are three specified categories that the developer made for the user to chose from depending on 
+the different times of the day:
+    - Morning
+    - Afternoon
+    - Evening
+
+### Tasks Collection
+- When creating a recipe, the user provides:
+    - Plan 
+    - Plan Description
+    - Plan Date
+    - Time
+    - Created by:
+
+### Users Collection
+- When registering an account, the user provides:
+     - Username (unique identifier)
+     - Password (hashed)
+
+## Features
+
+### Design Features
+Each page of the website features a responsive and intuitive navigational system:
+- There is a conventionally placed **navbar** on the top of each page with easily accessible navigation links with a clickable logo, redirecting users back to the home page.
+    - On mobile and tablet screens, the navbar is located in a conventionally placed 'hamburger' menu.
+- Landing Page Navbar includes:
+    - Home
+    - Log in
+    - Register
+- Upon Logging in Navbar includes: 
+    - Home
+    - My Plan
+    - Add Plan
+    - Log out
+- If the admin is in session, there will be additional link added to the `navbar`:
+     - Manage Plan
+- On mobile and tablet screens, the extra buttons will appear on the navigation (hamburger) menu in order to provide quick access.
+- There is a **banner image with quotes** on landing page.
+- There is an **image** at the  bottom of the banner image to create eyecatching landing page.
+- Testimonials of the user on the landing page.
+- The **Footer** contains the appropriate **icons** to allow users to:
+    - Link to the Facebook Page.
+    - Link to the Instagram Page.
+    - Link to the Pinterest Page.
+    - Link to the Yoututbe Page.
+- Copyrights on th footer.   
+- Go to top button.
+- [Jinja](https://pypi.org/project/Jinja2/) was used to extend the `base.html` page, allowing for the utmost consistency and preservation of functionality across all pages. 
+    The extended block elements created basic layout for each page. Sample:
+
+     ```
+    {% extends "base.html" %}
+    {% block title %}Members{% endblock %}
+
+    {% block content %}
+    
+        <ul>
+        {% for user in users %}
+        <li><a href="{{ user.url }}">{{ user.username }}</a></li>
+        {% endfor %}
+        </ul>
+
+    {% endblock %}
+
+     ``` 
+
+
+
+
+
+
+
+
+### Existing Features
+
+**[Home Page](http://bake-it-til-you-make-it.herokuapp.com/home "Link to Home page")**
+| Feature      | Description  |
+|--------------|--------------|
+| Carousel     | Bootstrap Carousel Component that displays the l**ast four uploaded** recipes |
+| Call to Action | Buttons connecting users to **Sign Up** or **Login** pages, if **not signed in**, or **My Recipes** or **My Favourites** pages, if **signed in**|
+
+
+**[My Plan Page](http://bake-it-til-you-make-it.herokuapp.com/find_recipes "Link to Find A Recipe page")**
+| Feature       | Description  |
+|---------------|--------------|
+| Search Bar    | Search bar function allowing users to **search** for their preferred recipes. Using a text search will direct users to the `search.html` page, displaying results. From there, they can **search again** to return. |
+| Dropdown Menu | Nested dropdown menu to **refine** the users search by either **Category** or **Level**|
+| Pagination    | The **Pagination** functionality will be activated once the amount of recipes to be displayed is over `6`. This was to avoid overwhelming the user.|
+
+**Search Results**
+| Feature       | Description  |
+|---------------|--------------|
+| Call to Action | There is a **Search Again** button allowing users to reset the search. This is conditional. If there **is** results from their search, the button is placed at the bottom of the page, allowing the users to view their results first. If there is **not** any results, the button is placed at the top of the page for their convenience (above the recommendations).
+
+**[Log in Page](http://bake-it-til-you-make-it.herokuapp.com/register "Link to Sign Up page")**
+| Feature       | Description  |
+|---------------|--------------|
+| Input Fields    | The **input** fields allow users to enter their information. The user can enter a profile image if they wish, or a default image will be used in it's place.|
+| Image Preview | On adding an image url to the `Profile Picture` field, the user can preview their image to ensure that the link is correct and it is the image they would like to use. |
+| Password Authentication | The **password** field uses [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/ "Link to Werkzeug information") to hash the password on entry and **confirm password** is validated using **Javascript**. If the passwords do not match, a `disabled` class is added to the **Register** button, preventing a password error. |
+| Call to Action | Once the input fields are completed as required, the user can click to **Register** or, if they already have an account, they can **Login**. |
+
+**[Register Page](http://bake-it-til-you-make-it.herokuapp.com/login "Link to Login page")**
+| Feature       | Description  |
+|---------------|--------------|
+| Input Fields    | The **input** fields allow users to enter their username. |
+| Password Authentication | The **password** field uses [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/ "Link to Werkzeug information") to un-hash the password for login authentication|
+| Call to Action | Once the input fields are completed as required, the user can click to **Login** or, if they do not already have an account, they can **Register**. |
+
+**Add Plan Page** (This page requires login authentication)
+| Feature       | Description  |
+|---------------|--------------|
+| Call to Action    | The User's **My Recipes** provides multiple actions the user can take: **Edit Profile**, **Create Profile**, link to **My Favourites** and the **logout** function. If they have no recipes in their repository, the user will be provided with addtional links to **get inspired** (search recipes) or **get creative** (create a recipe).|
+
+**Manage Plan Page** (This page requires login authentication)
+| Feature       | Description  |
+|---------------|--------------|
+| Call to Action    | The User's **My Favourites** provides multiple actions the user can take: **Edit Profile**, **Create Profile**, link to **My Recipes** and the **logout** function. |
+
+**Edit Plan Page** (This page requires login authentication)
+| Feature       | Description  |
+|---------------|--------------|
+| Input Fields | The user is able to edit their profile image as they see fit. Their current information is used as the **default** value for the fields |
+| Image Preview | The `Profile Image` field allows the user to preview their current profile image. Changing the image url calls a `JavaScript` function, allowing the user to get real-time feedback as they change the image.|
+| Call to Action | The user can choose to **Cancel** their actions or **Save** their new information. Both return the user to **My Recipes**. Another button directs the user to the **Account Settings** page for user to take further action. |
+
+
+
+
+
+
+
+
+
+### Features to Implement in the future
+
+- Pagination
+- Google login 
+- Lazy loading images 
+- "Remember me" signup checkbox
+- Edit user profiles
+- User profiles Avatar 
+- Page loading animation
+- Third party search engine
+- Admin console
+- More categories
+- Sort tasks by date
+- Testimonial functionality
+- Email verification
 
 [Back to top ⇧](#table-of-contents)
