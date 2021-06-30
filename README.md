@@ -326,6 +326,8 @@ the different times of the day:
 - Testimonial functionality
 - Email verification
 - Error flash messages 
+- Read me file section 
+    - To put comments in the code to not to complicate for the viewers
 
 [Back to top ⇧](#table-of-contents)
 
@@ -607,7 +609,7 @@ The deployed version can now be viewed by selecting `View App` in the top-right 
 
 ## Credits 
 
-I have consulted multiple sites in order to better understand the code I needed to implement the deisgn. 
+I have consulted multiple sites in order to better understand the code I needed to implement the design. 
 
 The [Code Institute Task Manager Mini Project](https://github.com/Code-Institute-Solutions/TaskManagerAuth) mini project was used as a reference point for the developer in the development of the core **CRUD** functionality of the website. The lessons included with the mini-project helped me to get a better understanding of each functionality and how to customise it to suit the project.
 
