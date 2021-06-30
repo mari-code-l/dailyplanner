@@ -189,6 +189,7 @@ Each page of the website features a responsive and intuitive navigational system
     - Link to the Yoututbe Page.
 - Copyrights on th footer.   
 - Go to top button.
+- tool tipped
 - [Jinja](https://pypi.org/project/Jinja2/) was used to extend the `base.html` page, allowing for the utmost consistency and preservation of functionality across all pages. 
     The extended block elements created basic layout for each page. Sample:
 
@@ -459,6 +460,8 @@ I did most of the testing manually since I am still learning how to test efficie
 
 - Manual testing of the hamburgerbutton once its in the mobile  or ipad viewand ensure that it will be redirected to their exact navbar links.
 
+- Manual testing of the tool tipped and ensure that it will function once it clicked.
+
 - Manual testing of the social links in the footer section and ensure that it will be redirected to their exact social pages.
 
    - further testing will be made in the future once I am knowledgeable enough of other testing method.
@@ -621,8 +624,11 @@ I would like to thank the following:
 - My family and friends, for providing an amount of encouragement.
 - Fellow CI students, for the inspiration and guidance.
 - Tim Nelson, for the walkthrough videos on the Code Institute platform.
-- My mentor Seun, for her guidance guidance.
+- My mentor Seun, for her guidance.
 - My former mentor Arnold Kyeza
+- To the tutor support  who are very patient by helping to troubleshoot
+- To Alex of Student Care by adjusting my schedule, giving advices on how to progress and calm me down when
+I was panicking when I have to resubmit my MS3 again due to lack of time and a complicated MS3 project that I have chosen then I failed and it complicates my MS4 project at the same time. 
 
 [Back to top ⇧](#table-of-contents)
 
